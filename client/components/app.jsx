@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from './header';
-import AboutMe from './about-me';
-import Application from './application';
-import Skill from './skill';
-import Contact from './contact-me';
+import About from './about';
+import Projects from './projects';
+import Skills from './skills';
+import Contact from './contact';
 
 export default function App() {
   return (
     <div>
       <Header />
-      <AboutMe />
-      <Application />
-      <Skill />
+      <About />
+      <Projects />
+      <Skills />
       <Contact />
     </div>
   );
