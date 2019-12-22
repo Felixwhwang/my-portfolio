@@ -4,6 +4,16 @@
   font-size: 3em;
 }
 
+@media only screen and (max-width: 375px) {
+  .skill-text {
+    font-size: 1em;
+  }
+
+  .about-bg {
+    height: 100vh;
+  }
+}
+
 .menu-bg {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -19,12 +29,6 @@
 
 .about-bg {
   height: 70vh;
-}
-
-@media only screen and (max-width: 375px) {
-  .about-bg {
-    height: 100vh;
-  }
 }
 
 .about-me {
@@ -74,10 +78,4 @@
 .skill-text {
   text-align: center;
   font-size: 1.5em;
-}
-
-@media only screen and (max-width: 375px) {
-  .skill-text {
-    font-size: 1em;
-  }
 }
