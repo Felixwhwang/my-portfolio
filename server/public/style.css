@@ -3,3 +3,40 @@
   background-color: lightblue;
   font-size: 3em;
 }
+
+.menu-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing-bg {
+  background-image: url('images/background.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about-bg {
+  height: 70vh;
+}
+
+@media only screen and (max-width: 375px) {
+  .about-bg {
+    height: 100vh;
+  }
+}
+
+.about-me {
+  background-color: white;
+  border: 1px solid #cecece;
+  box-shadow: 0px 0px 3px 1px #cecece;
+  margin: 3px;
+}
+
+.my-photo {
+  height: 15em;
+  width: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+}
