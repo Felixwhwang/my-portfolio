@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="home">
+    <nav className="navbar navbar-expand-sm navbar-dark menu-bg fixed-top" id="home">
       <div className="container">
         <AnchorLink className="navbar-brand" href="#home">Wenhao Wang</AnchorLink>
         <button className="navbar-toggler"
