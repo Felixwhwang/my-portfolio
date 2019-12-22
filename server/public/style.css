@@ -40,3 +40,19 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.projects-bg {
+  height: 120vh;
+}
+
+.grow {
+  transition: all 0.6s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
