@@ -56,3 +56,28 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+.project-shadow {
+  box-shadow: 0 13px 8px -10px rgba(0,0,0,.1);
+}
+
+.skills-bg {
+  height: 100vh;
+  background-color: lightslategray;
+}
+
+.skill-card {
+  border: 0;
+  background-color: transparent;
+}
+
+.skill-text {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 375px) {
+  .skill-text {
+    font-size: 1em;
+  }
+}
