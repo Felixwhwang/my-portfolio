@@ -51,7 +51,7 @@ export default function Projects() {
           </div>
 
           <div className="col-lg-4 col-md-6 p-2">
-            <div className="card">
+            <div className="card project-shadow">
               <div className="overflow-hidden">
                 <img src="images/memory-match.png" className="img-fluid grow" />
               </div>
