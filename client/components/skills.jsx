@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Skill() {
   return (
-    <div className="skills-bg d-flex justify-content-center align-items-center" id="skills">
+    <div className="gap d-flex justify-content-center align-items-center" id="skills">
       <div className="container">
         <h2 className="text-center">Skills</h2>
         <div className="row">
