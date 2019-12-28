@@ -2,8 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="about-bg
-      d-flex justify-content-center align-items-center" id="about">
+    <div className="gap d-flex justify-content-center align-items-center" id="about">
       <div className="container">
         <div className="row about-me p-3">
           <div className="col-12 col-sm-6 col-lg-5

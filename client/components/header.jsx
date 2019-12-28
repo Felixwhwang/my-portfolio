@@ -1,12 +1,41 @@
-import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [collapse, setCollapse] = useState('');
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100;
+      if (isTop) {
+        setScrolled(false);
+      } else {
+        setScrolled(true);
+      }
+    });
+    window.addEventListener('resize', () => {
+      const isMobile = window.innerWidth <= 575;
+      if (isMobile) {
+        setCollapse('collapse');
+      } else {
+        setCollapse('');
+      }
+    });
+    const isMobile = window.innerWidth <= 575;
+    if (isMobile) {
+      setCollapse('collapse');
+    } else {
+      setCollapse('');
+    }
+  });
+
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark menu-bg fixed-top" id="home">
+    <nav className={`navbar navbar-expand-sm navbar-dark fixed-top
+      ${scrolled ? 'menu-bg' : 'menu-trans'}`} id="navMain">
       <div className="container">
-        <AnchorLink className="navbar-brand" href="#home">Wenhao Wang</AnchorLink>
-        <button className="navbar-toggler"
+        {/* <AnchorLink className="navbar-brand" href="#home">Wenhao Wang</AnchorLink> */}
+        <button className="navbar-toggler no-border"
           type="button"
           data-toggle="collapse"
           data-target="#menuNav"
@@ -15,13 +44,32 @@ export default function Header() {
           aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="menuNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <AnchorLink href="#home" className="nav-link">Home</AnchorLink>
-            </li>
-            <li className="nav-item">
-              <AnchorLink href="#about" className="nav-link">About</AnchorLink>
+        <div className="collapse navbar-collapse justify-content-center" id="menuNav">
+          <ul className="navbar-nav menu-link">
+            <Link data-toggle={collapse} href="#menuNav"
+              activeClass="active" to="landing" spy={true} smooth={true} offset={-70}>
+              Home
+            </Link>
+            <Link data-toggle={collapse} href="#menuNav"
+              activeClass="active" to="projects" spy={true} smooth={true} offset={-70}>
+              Projects
+            </Link>
+            <Link data-toggle={collapse} href="#menuNav"
+              activeClass="active" to="skills" spy={true} smooth={true} offset={-70}>
+              Skills
+            </Link>
+            <Link data-toggle={collapse} href="#menuNav"
+              activeClass="active" to="about" spy={true} smooth={true} offset={-70}>
+              About
+            </Link>
+            <Link data-toggle={collapse} href="#menuNav"
+              activeClass="active" to="contact" spy={true} smooth={true} offset={-70}>
+              Contact
+            </Link>
+            <a href="">Resume</a>
+            <a href="">Github</a>
+            {/* <li className="nav-item active">
+              <AnchorLink href="#landing" className="nav-link">Home</AnchorLink>
             </li>
             <li className="nav-item">
               <AnchorLink href="#projects" className="nav-link">Projects</AnchorLink>
@@ -30,8 +78,17 @@ export default function Header() {
               <AnchorLink href="#skills" className="nav-link">Skills</AnchorLink>
             </li>
             <li className="nav-item">
+              <AnchorLink href="#about" className="nav-link">About</AnchorLink>
+            </li>
+            <li className="nav-item">
               <AnchorLink href="#contact" className="nav-link">Contact</AnchorLink>
             </li>
+            <li className="nav-item">
+              <a href="" className="nav-link">Resume</a>
+            </li>
+            <li className="nav-item">
+              <a href="" className="nav-link">Github</a>
+            </li> */}
           </ul>
         </div>
       </div>

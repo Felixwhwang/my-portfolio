@@ -2,8 +2,7 @@ import React from 'react';
 
 export default function Projects() {
   return (
-    <div className="projects-bg d-flex
-        justify-content-center align-items-center" id="projects">
+    <div className="gap d-flex justify-content-center align-items-center" id="projects">
       <div className="container">
         <h2 className="text-center">Projects</h2>
         <div className="row">

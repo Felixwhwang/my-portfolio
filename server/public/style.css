@@ -1,21 +1,43 @@
-.full-view {
-  height: 100vh;
-  background-color: lightblue;
-  font-size: 3em;
+a:focus, button:focus {
+  outline: none;
 }
 
-@media only screen and (max-width: 375px) {
-  .skill-text {
-    font-size: 1em;
-  }
+.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.6s ease;
+}
 
-  .about-bg {
-    height: 100vh;
-  }
+.navbar {
+  padding: 0;
+}
+
+.gap {
+  padding: 5em 0 5em 0;
+}
+
+.menu-trans {
+  padding: 20px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 1s ease;
 }
 
 .menu-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
+  transition: all 1s ease;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.menu-link a {
+  color: white !important;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.6s ease;
+  text-decoration: none;
+}
+
+.no-border {
+  border: 0;
 }
 
 .landing-bg {
@@ -25,10 +47,6 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-}
-
-.about-bg {
-  height: 70vh;
 }
 
 .about-me {
@@ -43,10 +61,6 @@
   width: 15em;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.projects-bg {
-  height: 120vh;
 }
 
 .grow {
@@ -65,11 +79,6 @@
   box-shadow: 0 13px 8px -10px rgba(0,0,0,.1);
 }
 
-.skills-bg {
-  height: 100vh;
-  background-color: lightslategray;
-}
-
 .skill-card {
   border: 0;
   background-color: transparent;
@@ -78,4 +87,17 @@
 .skill-text {
   text-align: center;
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 375px) {
+  .skill-text {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .menu-trans {
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+  }
 }
