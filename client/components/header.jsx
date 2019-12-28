@@ -68,27 +68,6 @@ export default function Header() {
             </Link>
             <a href="">Resume</a>
             <a href="">Github</a>
-            {/* <li className="nav-item active">
-              <AnchorLink href="#landing" className="nav-link">Home</AnchorLink>
-            </li>
-            <li className="nav-item">
-              <AnchorLink href="#projects" className="nav-link">Projects</AnchorLink>
-            </li>
-            <li className="nav-item">
-              <AnchorLink href="#skills" className="nav-link">Skills</AnchorLink>
-            </li>
-            <li className="nav-item">
-              <AnchorLink href="#about" className="nav-link">About</AnchorLink>
-            </li>
-            <li className="nav-item">
-              <AnchorLink href="#contact" className="nav-link">Contact</AnchorLink>
-            </li>
-            <li className="nav-item">
-              <a href="" className="nav-link">Resume</a>
-            </li>
-            <li className="nav-item">
-              <a href="" className="nav-link">Github</a>
-            </li> */}
           </ul>
         </div>
       </div>

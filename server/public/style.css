@@ -2,6 +2,36 @@ a:focus, button:focus {
   outline: none;
 }
 
+.brand-landing {
+  color: white;
+  opacity: 0.7;
+  font-family: 'Julius Sans One';
+  margin-bottom: 5vh;
+  font-size: 2.4em;
+}
+
+.slogan {
+  font-size: 1em;
+  color: white;
+  opacity: 0.7;
+  font-family: 'Julius Sans One';
+  margin-bottom: 5vh;
+}
+
+.arrow-down {
+  font-size: 3em;
+  color: white;
+  opacity: 0.7;
+  font-family: 'Julius Sans One';
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.arrow-down:hover {
+  color: black;
+  transition: all 1s ease;
+}
+
 .active {
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.6s ease;
@@ -34,6 +64,7 @@ a:focus, button:focus {
   font-size: 1em;
   transition: all 0.6s ease;
   text-decoration: none;
+  font-family: 'Julius Sans One';
 }
 
 .no-border {
@@ -47,6 +78,11 @@ a:focus, button:focus {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+}
+
+.bg-color {
+  background-color: RGBA(0, 0, 0, 0.3);
+  height: 100vh;
 }
 
 .about-me {
