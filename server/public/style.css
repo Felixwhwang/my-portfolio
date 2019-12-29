@@ -2,12 +2,28 @@ a:focus, button:focus {
   outline: none;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+* {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
 .brand-landing {
   color: white;
   opacity: 0.7;
   font-family: 'Julius Sans One';
   margin-bottom: 5vh;
   font-size: 2.4em;
+  text-shadow: 3px 3px 5px black;
 }
 
 .slogan {
@@ -16,6 +32,12 @@ a:focus, button:focus {
   opacity: 0.7;
   font-family: 'Julius Sans One';
   margin-bottom: 5vh;
+  text-shadow: 3px 3px 5px black;
+}
+
+.section-title {
+  font-family: 'Julius Sans One';
+  margin-bottom: 6vh;
 }
 
 .arrow-down {
@@ -25,11 +47,43 @@ a:focus, button:focus {
   font-family: 'Julius Sans One';
   cursor: pointer;
   transition: all 1s ease;
+  text-shadow: 3px 3px 5px black;
 }
 
 .arrow-down:hover {
   color: black;
   transition: all 1s ease;
+}
+
+.person-link {
+  font-size: 1.5em;
+}
+
+.git-color {
+  color: rgb(80, 80, 80);
+}
+
+.git-color:hover {
+  color: black;
+}
+
+.resume-color {
+  color: #de5246;
+}
+
+.resume-color:hover {
+  color: #b32d21;
+}
+
+.project-icon {
+  font-size: 1.5em;
+  margin-left: 0.5vw;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.2);
 }
 
 .active {
@@ -42,7 +96,7 @@ a:focus, button:focus {
 }
 
 .gap {
-  padding: 5em 0 5em 0;
+  padding: 2em 0 5em 0;
 }
 
 .menu-trans {
@@ -52,7 +106,7 @@ a:focus, button:focus {
 }
 
 .menu-bg {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   transition: all 1s ease;
   border-bottom: 1px solid rgba(255,255,255,.3);
 }
@@ -71,6 +125,15 @@ a:focus, button:focus {
   border: 0;
 }
 
+.skill-icon {
+  padding: 5%;
+  transition: all 0.5s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
 .landing-bg {
   background-image: url('images/background.jpg');
   height: 100vh;
@@ -80,6 +143,27 @@ a:focus, button:focus {
   background-position: center center;
 }
 
+.contact-bg {
+  background-image: url('images/contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact-top-gap {
+  padding-top: 3.5em;
+}
+
+.info-bg {
+  background-color: white;
+}
+
+.contact-filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
 .bg-color {
   background-color: RGBA(0, 0, 0, 0.3);
   height: 100vh;
@@ -87,16 +171,17 @@ a:focus, button:focus {
 
 .about-me {
   background-color: white;
-  border: 1px solid #cecece;
-  box-shadow: 0px 0px 3px 1px #cecece;
+  box-shadow: -5px 25px 50px -20px;
   margin: 3px;
 }
 
 .my-photo {
-  height: 15em;
-  width: 15em;
-  object-fit: cover;
-  border-radius: 50%;
+  border-radius: 5px;
+}
+
+.about-text {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
 }
 
 .grow {
@@ -122,10 +207,11 @@ a:focus, button:focus {
 
 .skill-text {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 992px) {
   .skill-text {
     font-size: 1em;
   }
