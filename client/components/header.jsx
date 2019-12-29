@@ -51,6 +51,10 @@ export default function Header() {
               Home
             </Link>
             <Link data-toggle={collapse} href="#menuNav"
+              activeClass="active" to="about" spy={true} smooth={true} offset={-70}>
+              About
+            </Link>
+            <Link data-toggle={collapse} href="#menuNav"
               activeClass="active" to="projects" spy={true} smooth={true} offset={-70}>
               Projects
             </Link>
@@ -59,15 +63,11 @@ export default function Header() {
               Skills
             </Link>
             <Link data-toggle={collapse} href="#menuNav"
-              activeClass="active" to="about" spy={true} smooth={true} offset={-70}>
-              About
-            </Link>
-            <Link data-toggle={collapse} href="#menuNav"
               activeClass="active" to="contact" spy={true} smooth={true} offset={-70}>
               Contact
             </Link>
-            <a href="">Resume</a>
-            <a href="">Github</a>
+            <a href="https://drive.google.com/file/d/16nDwhSaATDoKNjkF6yk5v2qdrRTWpmBH/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer">Resume</a>
           </ul>
         </div>
       </div>

@@ -8,9 +8,11 @@ export default function Landing() {
         <div>
           <div className="brand-landing text-center">HI, I&apos;M WENHAO</div>
           <div className="slogan text-center">Challenge is my progress</div>
-          <div className="arrow-down text-center">
+          <div className="text-center">
             <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-70}>
-              <i className="fas fa-angle-double-down"></i>
+              <div className="arrow-down">
+                <i className="fas fa-angle-double-down"></i>
+              </div>
             </Link>
           </div>
         </div>

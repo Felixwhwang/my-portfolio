@@ -11,9 +11,9 @@ export default function App() {
     <div>
       <Header />
       <Landing />
+      <About />
       <Projects />
       <Skills />
-      <About />
       <Contact />
     </div>
   );
