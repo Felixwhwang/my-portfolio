@@ -138,7 +138,6 @@ body {
   background-image: url('images/background.jpg');
   height: 100vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -146,7 +145,6 @@ body {
 .contact-bg {
   background-image: url('images/contact-bg.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
