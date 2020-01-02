@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 export default function Landing() {
   return (
-    <div className="landing-bg" id="landing">
+    <div className="landing-bg none-select" id="landing">
       <div className="bg-color d-flex align-items-center justify-content-center">
         <div>
           <div className="brand-landing text-center">HI, I&apos;M WENHAO</div>

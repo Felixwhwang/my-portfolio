@@ -10,11 +10,17 @@ export default function Projects() {
           <div className="col-lg-4 col-md-6 p-2">
             <div className="card project-shadow h-100">
               <div className="overflow-hidden">
-                <img src="images/memory-match.png" className="img-fluid grow" />
+                <a href="https://novamm.wenhaowang.net/" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="images/memory-match.png" className="img-fluid grow" />
+                </a>
               </div>
               <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <h4 className="card-title d-inline">Nova Memory Match</h4>
+                  <a href="https://novamm.wenhaowang.net/" target="_blank"
+                    rel="noopener noreferrer">
+                    <h4 className="card-title d-inline">Nova Memory Match</h4>
+                  </a>
                   <div>
                     <a href="https://github.com/Felixwhwang/nova-memory-match" target="_blank"
                       rel="noopener noreferrer">
@@ -39,11 +45,17 @@ export default function Projects() {
           <div className="col-lg-4 col-md-6 p-2">
             <div className="card project-shadow h-100">
               <div className="overflow-hidden">
-                <img src="images/weapon-sales.png" className="img-fluid grow" />
+                <a href="https://gameweaponsales.wenhaowang.net/" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="images/weapon-sales.png" className="img-fluid grow" />
+                </a>
               </div>
               <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <h4 className="card-title d-inline">Game Weapon Sales</h4>
+                  <a href="https://gameweaponsales.wenhaowang.net/" target="_blank"
+                    rel="noopener noreferrer">
+                    <h4 className="card-title d-inline">Game Weapon Sales</h4>
+                  </a>
                   <div>
                     <a href="https://github.com/Felixwhwang/game-weapon-sales" target="_blank"
                       rel="noopener noreferrer">
