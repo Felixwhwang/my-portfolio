@@ -66,7 +66,7 @@ export default function Header() {
               activeClass="active" to="contact" spy={true} smooth={true} offset={-70}>
               Contact
             </Link>
-            <a href="https://drive.google.com/file/d/16nDwhSaATDoKNjkF6yk5v2qdrRTWpmBH/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1HCj_TltPGv4uELTeNoEsP9NiEeyAa9wh/view?usp=sharing" target="_blank"
               rel="noopener noreferrer">Resume</a>
           </ul>
         </div>
