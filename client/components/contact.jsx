@@ -8,7 +8,7 @@ export default function Contact() {
           <div className="info-bg">
             <div className="p-5">
               <h2 className="text-center mb-2">Thank You</h2>
-              <h5 className="text-center text-muted mb-4">I am wlling and able to relocate at short notice.</h5>
+              <h5 className="text-center text-muted mb-4">I am willing and able to relocate at short notice.</h5>
               <div>
                 <div className="d-flex align-items-center justify-content-center mb-1">
                   <i className="fas fa-envelope"></i>
