@@ -129,6 +129,15 @@ body {
   border: 0;
 }
 
+.under-construction {
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  padding: 0px 7px 0px 7px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .skill-icon {
   padding: 5%;
   transition: all 0.5s ease;

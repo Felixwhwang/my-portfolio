@@ -103,6 +103,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <label className="text-muted">Full Stack App</label>
+                <div className="under-construction">Under Construction</div>
                 <p className="card-text">A web application for young people,
                   and who want to find the ideal other half in his/her life.</p>
                 <p className="card-text">App front-end was built using <strong>React</strong>,
