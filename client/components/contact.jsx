@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function Contact() {
+  const today = new Date();
+  const toYear = today.getFullYear();
   return (
     <div className="contact-bg d-flex align-items-center justify-content-center" id="contact">
       <div className="contact-filter">
@@ -26,7 +28,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="text-white text-center mt-3">
-            Copyright ©2020 All rights reserved.
+            Copyright ©{toYear} All rights reserved.
           </div>
           <div className="text-white text-center mb-3">
             wenhaowang.net
